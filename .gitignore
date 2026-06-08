@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Credentials
+kaggle.json
+*.key
+*.pem
+
+# Local system files
+.DS_Store
+
+# Large project artifacts
+data/raw/*
+data/processed/*
+models/checkpoints/*
+models/exported/*
+src/app/static/uploads/*
+
+# Keep directory placeholders
+!data/raw/.gitkeep
+!data/raw/images/.gitkeep
+!data/processed/.gitkeep
+!models/checkpoints/.gitkeep
+!models/exported/.gitkeep
+!src/app/static/uploads/.gitkeep
+

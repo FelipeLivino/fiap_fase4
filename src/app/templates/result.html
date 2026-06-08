@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado - CardioIA Vision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel result-grid">
+        <div>
+          <p class="eyebrow">Resultado</p>
+          <h1>{{ prediction.predicted_label }}</h1>
+          <dl class="metadata">
+            <div>
+              <dt>P(Cardiomegaly)</dt>
+              <dd>{{ "%.2f"|format(prediction.probability_cardiomegaly * 100) }}%</dd>
+            </div>
+            <div>
+              <dt>P(No Finding)</dt>
+              <dd>{{ "%.2f"|format(prediction.probability_no_finding * 100) }}%</dd>
+            </div>
+            <div>
+              <dt>Modelo</dt>
+              <dd>{{ prediction.model_name }}</dd>
+            </div>
+          </dl>
+          <a class="button-link" href="{{ url_for('index') }}">Classificar outra imagem</a>
+          <p class="disclaimer">
+            Este prototipo possui finalidade exclusivamente academica e educacional. Ele nao deve ser usado como ferramenta diagnostica real.
+          </p>
+        </div>
+        <figure class="image-preview">
+          <img src="{{ image_url }}" alt="Imagem enviada para classificacao">
+        </figure>
+      </section>
+    </main>
+  </body>
+</html>
