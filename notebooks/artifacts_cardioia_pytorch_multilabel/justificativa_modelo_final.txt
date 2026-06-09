@@ -1,0 +1,4 @@
+Modelo final selecionado: Vision Transformer ViT
+Criterio: menor selection_score em ranking ponderado com 40% F1 macro, 30% recall macro, 20% AUC-ROC macro e 10% tempo de inferencia.
+Resultados no teste: F1 macro=0.5426, recall macro=0.6605, AUC-ROC macro=0.7201, precision macro=0.4651, tempo=0.010037 s/imagem.
+A decisao prioriza deteccao multi-label das patologias selecionadas sem ignorar custo operacional, matrizes de confusao por classe, ajuste de threshold e fairness.

@@ -6,6 +6,13 @@ __pycache__/
 .ruff_cache/
 .ipynb_checkpoints/
 
+# Node / Expo
+node_modules/
+.npm-cache/
+.expo/
+.expo-home/
+tmp-*.log
+
 # Environments
 .env
 .venv/
@@ -26,6 +33,7 @@ data/processed/*
 models/checkpoints/*
 models/exported/*
 src/app/static/uploads/*
+notebooks/artifacts_cardioia_pytorch_multilabel/modelos/*.pt
 
 # Keep directory placeholders
 !data/raw/.gitkeep

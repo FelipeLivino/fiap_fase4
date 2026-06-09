@@ -1,0 +1,18 @@
+metric,value
+linhas totais,112104.0
+imagens unicas,112104.0
+pacientes unicos,30802.0
+achados unicos,15.0
+imagens No Finding,60353.0
+imagens com qualquer patologia selecionada,38643.0
+imagens multi-label,20792.0
+media de labels originais por imagem,1.262
+media de patologias selecionadas por imagem,0.447
+prevalencia Infiltration,0.1774
+imagens com Infiltration,19891.0
+prevalencia Effusion,0.1188
+imagens com Effusion,13316.0
+prevalencia Atelectasis,0.1031
+imagens com Atelectasis,11558.0
+prevalencia Pneumothorax,0.0473
+imagens com Pneumothorax,5301.0

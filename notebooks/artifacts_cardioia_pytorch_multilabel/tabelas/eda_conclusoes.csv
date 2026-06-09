@@ -1,0 +1,7 @@
+question,answer
+O dataset e balanceado?,"Nao. A distribuicao de achados mostra diferencas importantes entre as patologias, justificando pos_weight por classe no treino multi-label."
+Quantas imagens No Finding existem?,"60,353 imagens (53.84% das linhas analisadas). Elas sao usadas como negativos para as quatro patologias alvo."
+Quais patologias foram selecionadas?,"Infiltration: 19,891, Effusion: 13,316, Atelectasis: 11,558, Pneumothorax: 5,301"
+Existem casos multi-label relevantes?,"20,792 imagens possuem mais de uma label original (18.55%); 9,667 possuem mais de uma patologia entre as quatro selecionadas."
+Por que usar split por paciente?,"Ha pacientes com multiplas imagens. Separar por Patient ID reduz o risco de vazamento entre treino, validacao e teste."
+Quais variaveis entram na discussao de governanca?,"Genero, idade e View Position mostram distribuicoes/taxas diferentes e devem ser monitorados na avaliacao e fairness."

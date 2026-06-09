@@ -1,0 +1,29 @@
+.git/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+mobile-app/node_modules/
+mobile-app/.npm-cache/
+mobile-app/.expo/
+mobile-app/.expo-home/
+mobile-app/tmp-*.log
+
+backend/tmp-*.log
+
+copy/
+data/raw/
+data/processed/
+models/checkpoints/
+models/exported/
+notebooks/artifacts_cardioia_pytorch/
+
+# O compose monta os artefatos como volume read-only.
+# Evita copiar o checkpoint grande para dentro da imagem.
+notebooks/artifacts_cardioia_pytorch_multilabel/modelos/
