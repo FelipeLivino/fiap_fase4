@@ -383,7 +383,7 @@ Motivo:
 
 Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou baixe os modelos nos links abaixo.
 
-<a src-"https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing">https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing>/a>
+https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing
 
 ## 9. Limitacoes
 
