@@ -381,7 +381,9 @@ Motivo:
 - `vgg16.pt` tem mais de 500 MB;
 - GitHub bloqueia arquivos acima de 100 MB.
 
-Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou armazene os pesos em Git LFS/Drive.
+Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou baixe os modelos nos links abaixo.
+
+<a src-"https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing">https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing>/a>
 
 ## 9. Limitacoes
 
