@@ -1,8 +1,41 @@
-# CardioIA Vision - PBL Fase 4
+# FIAP - Faculdade de Informática e Administração Paulista
 
-Projeto academico de Visao Computacional para apoio a triagem de achados em radiografias de torax. A solucao usa o dataset publico NIH Chest X-rays, treina modelos em PyTorch, compara CNNs, transfer learning e Vision Transformer, executa analise de fairness e entrega uma interface integrada com backend Flask e app React Native/Expo.
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="https://github.com/FelipeLivino/Fase2_Cap1_CardioIA/blob/main/asset/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
 
-> Este projeto e uma prova de conceito academica. Ele nao substitui avaliacao medica, nao deve ser usado como ferramenta diagnostica real e depende de validacao clinica externa antes de qualquer aplicacao fora do contexto educacional.
+<br>
+
+# Nome do projeto
+
+CardioIA - Fase 4: Visão Computacional na Clínica
+
+## Nome do grupo
+
+Rumo ao NEXT
+
+## 👨‍🎓 Integrantes:
+
+- <a href="#">Felipe Livino dos Santos (RM 563187)</a>
+- <a href="#">Daniel Veiga Rodrigues de Faria (RM 561410)</a>
+- <a href="#">Tomas Haru Sakugawa Becker (RM 564147)</a>
+- <a href="#">Daniel Tavares de Lima Freitas (RM 562625)</a>
+- <a href="#">Gabriel Konno Carrozza (RM 564468)</a>
+
+## 👩‍🏫 Professores:
+
+### Tutor(a)
+
+- <a href="#">Caique Nonato da Silva Bezerra</a>
+
+### Coordenador(a)
+
+- <a href="https://www.linkedin.com/company/inova-fusca">ANDRÉ GODOI CHIOVATO</a>
+
+## 📜 Descrição
+
+Projeto de Visao Computacional para apoio a triagem de achados em radiografias de torax. A solucao usa o dataset publico NIH Chest X-rays, treina modelos em PyTorch, compara CNNs, transfer learning e Vision Transformer, executa analise de fairness e entrega uma interface integrada com backend Flask e app React Native/Expo.
+
 
 ## 1. Resumo executivo
 
@@ -381,14 +414,29 @@ Motivo:
 - `vgg16.pt` tem mais de 500 MB;
 - GitHub bloqueia arquivos acima de 100 MB.
 
-Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou baixe os modelos nos links abaixo.
-
-https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing
+Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou armazene os pesos em Git LFS/Drive.
 
 ## 9. Limitacoes
 
 - O dataset possui labels derivados de laudos e pode conter ruido.
-- O modelo nao passou por validacao clinica externa.
 - Fairness foi analisada como auditoria exploratoria, nao como certificacao de uso clinico.
 - Algumas metricas por subgrupo podem oscilar quando a amostra e pequena.
 - O app e demonstrativo e nao deve ser usado para diagnostico.
+
+
+## 🗃 Histórico de lançamentos
+
+- 1.0.0 - 13/04/2026
+  - Finalização do backend em conjunto com o frontend-expo
+- 0.4.0 - 09/06/2026
+  - Desenvolvimento do backend em conjunto com o frontend-expo
+- 0.3.0 - 07/06/2026
+  - Finalização e analises no notebook 
+- 0.2.0 - 05/06/2026
+  - Trinamento base dos modelos de cnn no notebook
+- 0.1.0 - 02/06/2026
+  - Commit Base e Lançamento incial contendo inicio do densenvolvimento do notebook
+
+## 📋 Licença
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
