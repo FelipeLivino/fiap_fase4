@@ -13,6 +13,7 @@ import {
   Text,
   TextInput,
   View,
+  useWindowDimensions,
 } from "react-native";
 
 const DEFAULT_API_URL = "http://localhost:5000";
@@ -25,6 +26,7 @@ const pathologyLabels = {
 };
 
 export default function App() {
+  const { width, height } = useWindowDimensions();
   const [apiUrl, setApiUrl] = useState(DEFAULT_API_URL);
   const [health, setHealth] = useState(null);
   const [image, setImage] = useState(null);
@@ -38,6 +40,13 @@ export default function App() {
     if (!result.detected_labels?.length) return "Nenhuma patologia acima do threshold";
     return result.detected_labels.join(", ");
   }, [result]);
+
+  const uploadHeight = useMemo(() => {
+    if (width >= 900) {
+      return Math.min(420, Math.max(280, height * 0.36));
+    }
+    return Math.min(320, Math.max(220, height * 0.32));
+  }, [height, width]);
 
   async function checkBackend() {
     try {
@@ -160,7 +169,7 @@ export default function App() {
           </Text>
         </View>
 
-        <View style={styles.uploadArea}>
+        <View style={[styles.uploadArea, { height: uploadHeight }]}>
           {image ? (
             <Image source={{ uri: image.uri }} style={styles.preview} />
           ) : (
@@ -220,9 +229,6 @@ export default function App() {
           </View>
         </View>
 
-        <Text style={styles.disclaimer}>
-          Prototipo academico para o PBL FIAP. Nao substitui avaliacao medica.
-        </Text>
       </ScrollView>
     </SafeAreaView>
   );
@@ -317,7 +323,6 @@ const styles = StyleSheet.create({
     fontSize: 13,
   },
   uploadArea: {
-    aspectRatio: 1.35,
     borderRadius: 8,
     overflow: "hidden",
     backgroundColor: "#e5efec",
@@ -327,7 +332,8 @@ const styles = StyleSheet.create({
   preview: {
     width: "100%",
     height: "100%",
-    resizeMode: "cover",
+    resizeMode: "contain",
+    backgroundColor: "#101817",
   },
   emptyPreview: {
     flex: 1,
