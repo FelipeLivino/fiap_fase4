@@ -301,7 +301,7 @@ notebooks/artifacts_cardioia_pytorch_multilabel/
 notebooks/artifacts_cardioia_pytorch_multilabel/modelos/vision_transformer_vit.pt
 ```
 
-Os checkpoints `.pt` nao estao no GitHub comum porque ultrapassam o limite de 100 MB. Eles devem ser gerados pelo notebook ou disponibilizados separadamente via Git LFS/Drive.
+Os checkpoints `.pt` nao estao no GitHub comum porque ultrapassam o limite de 100 MB. Eles devem ser gerados pelo notebook ou fazer o download pelo Google Drive https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing .
 
 ### 6.2. Subir a aplicacao
 
@@ -414,7 +414,7 @@ Motivo:
 - `vgg16.pt` tem mais de 500 MB;
 - GitHub bloqueia arquivos acima de 100 MB.
 
-Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou armazene os pesos em Git LFS/Drive.
+Sem esses arquivos, o repositorio continua versionavel. Para reproduzir inferencia em outra maquina, rode o notebook para gerar o checkpoint ou faça o download pelo google drive https://drive.google.com/drive/folders/1sUSwnuo1RXafGidsDtmAxkjubmNg_Pua?usp=sharing
 
 ## 9. Limitacoes
 
