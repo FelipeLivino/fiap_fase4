@@ -36,6 +36,8 @@ Rumo ao NEXT
 
 Projeto de Visao Computacional para apoio a triagem de achados em radiografias de torax. A solucao usa o dataset publico NIH Chest X-rays, treina modelos em PyTorch, compara CNNs, transfer learning e Vision Transformer, executa analise de fairness e entrega uma interface integrada com backend Flask e app React Native/Expo.
 
+Confira o funcionamento do projeto neste vídeo demonstrativo:
+▶️ [Assista ao vídeo no YouTube](https://youtu.be/dlbJHJUZ-y4)
 
 ## 1. Resumo executivo
 
